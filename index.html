@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <!-- Define a codificação de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Define a escala inicial para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inclui os estilos CSS -->
+    <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/media-query.css">
+
+    <!-- Define o ícone do site. O atributo "href" especifica o caminho para o arquivo de imagem. O atributo "type" especifica o tipo MIME da imagem. -->
+    <link rel="shortcut icon"
+        href="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnp2dGE3OGd1OWc2eDV2OG5yY3Ztdzh6bXpxamphYXdkODR2Z3NuMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YqDjJ2Ht1rI3V91FAc/giphy.gif"
+        type="image/x-icon">
+
+    <!-- Define o título da página -->
+    <title>Interactive-Form</title>
+</head>
+
+<body>
+    <header>
+        <!-- Início do Container -->
+        <div class="container">
+            <!-- Título do formulário -->
+            <h1>Developer <span>Registration</span></h1>
+            <!-- Imagem do desenvolvedor -->
+            <img class="developer-registration"
+                src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXpreGh0aDJtemhmenI4bXJrOTg5NDJ4czY0NWdiaXBkYWVzY2EzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/zhYSVCirREeIZtONCI/giphy.gif"
+                alt="developer">
+            </a>
+            <!-- Início do formulário -->
+            <form>
+                <!-- Campo Nome -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <!-- Campo de entrada para o nome -->
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <!-- Campo Telefone/Celular -->
+                <div class="form-group">
+                    <label for="telephone">Phone/Mobile:</label>
+                    <!-- Campo de entrada para telefone/celular -->
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+                <!-- Campo E-mail -->
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <!-- Campo de entrada para e-mail -->
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!-- Campo Linguagem de Programação -->
+                <div class="form-group">
+                    <label for="language">Programming Language:</label>
+                    <!-- Seleção da linguagem de programação -->
+                    <select id="language" name="language">
+                        <!-- Opções de linguagem -->
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="csharp">C#</option>
+                    </select>
+                </div>
+                <!-- Campo Experiência -->
+                <div class="form-group">
+                    <label for="experience">Experience:</label>
+                    <!-- Barra deslizante para seleção da experiência -->
+                    <input type="range" id="experience" name="experience" min="0" max="10" step="1" required>
+                </div>
+                <!-- Campo Descrição -->
+                <div class="form-group">
+                    <label for="biography">Biography:</label>
+                    <!-- Área de texto para biografia -->
+                    <textarea id="biography" name="biography" required></textarea>
+                </div>
+
+                <!-- Botão Cadastro do formulário -->
+                <button onclick="registrationdev()">Register
+                </button>
+            </form>
+            <!-- Fim do Container -->
+        </div>
+    </header>    
+        <script src="./assets/js/cadastro.js"></script>
+
+</body>
+
+</html>
